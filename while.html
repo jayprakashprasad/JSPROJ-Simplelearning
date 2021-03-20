@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="whiles"></p>
+    <script>
+  /*  var i = 1;
+while(i <=100){
+    if((i%3) == 0 && (i%5) == 0){
+        console.log("fizzbuzz");
+    }
+    else if((i%3) == 0){
+        console.log("fizz");
+    }
+    else if((i%5) == 0){
+        console.log("buzz");
+    }
+    else {
+        console.log(i);
+    }
+    i++;
+} */
+var fizzbuzz = [];
+var i = 1;
+
+fizbuz();
+function fizbuz(){
+    
+while(i <=100){
+    if((i%3) == 0 && (i%5) == 0){
+       fizzbuzz.push("fizzbuzz" + "\t");
+    }
+    else if((i%3) == 0){
+        fizzbuzz.push("fizz"+ "\t");
+    }
+    else if((i%5) == 0){
+        fizzbuzz.push("buzz"+ "\t");
+    }
+    else {
+        fizzbuzz.push(i+"\t");
+    }
+    i++;
+}
+  //  document.getElementById('whiles').innerHTML = fizzbuzz;
+   console.log(fizzbuzz);
+}
+
+    </script>
+</body>
+</html>

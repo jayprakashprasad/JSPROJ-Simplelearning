@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+   
+
+   <!--   <h1 id="demo">grgg</h1> -->
+    <script>
+      /*   var i = prompt("hi");
+        if (i != "") {
+        document.write("why" + i);
+        } */
+/*   function myFun(){
+    var comfirm = confirm("wnat to visit");
+     if(comfirm == true) {
+         window.open("http://facebook.com");
+         return true;
+     } else {
+       document.write("dont want to visit");
+         return false
+     }
+  }*/
+    </script>
+     
+        
+          <p id="hey">helo</p>
+          <p class="helo">helosfrgrgo</p>
+          <p class="helo">ggg</p>
+               
+      <ul><li id="heyi">like</li>
+          <li>share</li>
+          <li>subsribe</li></ul>
+      
+      
+      <script>
+          var child = document.body.children;
+          console.log(child);
+
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("this is new pxdddara");
+        para.appendChild(textNode);
+        console.log(para);
+       document.body.appendChild(para);
+
+       //access 1st and last child
+       var list = document.querySelector("ul");
+       console.log(list);
+       console.log(list.firstChild);
+       console.log(list.lastChild);
+
+       var firstSib = hey.nextElementSibling.nextElementSibling;
+       console.log(firstSib);
+       console.log(list.parentNode);
+
+  </script>
+
+</body>
+<!--  selectors -->  
+  <!-- <script>
+     var a = document.getElementById("hey").innerHTML;
+     document.write(a);
+ </script>
+  <script> 
+      var b  = document.getElementsByClassName("helo")[1].innerHTML ;
+        document.write(b);
+   </script>
+
+<script>
+    var tag = document.querySelector('p').innerHTML;
+    document.write(tag);
+    
+</script> -->
+</html>

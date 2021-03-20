@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class="otps">
+            
+        <p><label>username</label>
+        <input type="text" name="username" placeholder="name"></p>
+     
+        <p><label>Mobile</label>
+        <input type="text" name="mobile" placeholder="mobile"></p>
+       
+       <p class="palces"> <input  type="text" placeholder="Otp"></p>
+       <p class="butt"> <button> Submit</button></p>
+     </div>
+     
+
+    </form>
+    <button  onclick="clockTime()"> click</button>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+     
+   
+     function clockTime() {
+        var clock = setInterval(clockTime, 1000);
+      const rtime = --times;
+       document.getElementById('demo').innerHTML = rtime; 
+        
+     }
+   /*   <?php
+	// Authorisation details.
+	$username = "shivnadar@simpleitr.com";
+	$hash = "e1491e19fd6721ed5832c9eabe12345a659c15f09631fae54ea17e37df32f82e";
+
+	// Config variables. Consult http://api.textlocal.in/docs for more info.
+	$test = "0";
+
+	// Data for text message. This is the text message data.
+	$sender = "NELVPL"; // This is who the message appears to be from.
+	$numbers = "9594435495"; // A single number or a comma-seperated list of numbers
+	$message = "This is a test message from the PHP API script.";
+	// 612 chars or less
+	// A single number or a comma-seperated list of numbers
+	$message = urlencode($message);
+	$data = "username=".$username."&hash=".$hash."&message=".$message."&sender=".$sender."&numbers=".$numbers."&test=".$test;
+	$ch = curl_init('http://api.textlocal.in/send/?');
+	curl_setopt($ch, CURLOPT_POST, true);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	$result = curl_exec($ch); // This is the result from the API
+	curl_close($ch);
+?> */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<style>
+  div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    
+
+  } 
+  img {
+     width:100%;
+  }
+
+</style>
+
+<body onload="MainImg();">
+     <div >
+
+    </div>
+
+    <script>
+        function MainImg() {
+        i = 1 ;
+        while( i < 10 ) {
+            var random=Math.floor(Math.random() * 10000) + 1
+            $('body>div').append('<img onclick="ShowId(this)" id="'+ random  +' " src="https://www.twistandtwain.com/assets/resources/2020/01/pexels-photo-414612.jpeg">');
+             document.write = i ;
+            i++;
+            
+             }
+        }
+        function ShowId(ids) {
+           var h1 =  ids.id ;
+          var am = "https://images.livemint.com/img/2020/08/05/600x338/AFP_1W15UN_1596599593606_1596599613268.jpg" ;
+
+            if( ids.src != am) {
+
+                $(ids).attr("src","https://images.livemint.com/img/2020/08/05/600x338/AFP_1W15UN_1596599593606_1596599613268.jpg");
+
+            }
+            else {
+                $(ids).attr("src","https://www.twistandtwain.com/assets/resources/2020/01/pexels-photo-414612.jpeg");
+
+             //   $(ids).attr("src",dif);
+ 
+            }
+
+
+        } 
+        
+        
+
+
+    </script>
+</body>
+</html>

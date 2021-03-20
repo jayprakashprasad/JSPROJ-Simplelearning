@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <input type="password" id="password-input" />
+    <button id="toggle-password">Toggle PW</button>
+
+</body>
+<script>
+    const passwordInput = document.querySelector("#password-input");
+    const togglePasswordButton = document.querySelector("#toggle-password")
+
+    togglePasswordButton.addEventListener("click",  () => {
+        if(passwordInput.type === "password") {
+            passwordInput.type = "text" ;
+
+        } else if(passwordInput.type === "text" ) {
+            passwordInput.type = "password" ;
+        }
+    });
+
+</script>
+</html>
